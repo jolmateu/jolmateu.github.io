@@ -436,4 +436,9 @@ a:hover{
   main{
     display: block;
   }
+
+  .photo{
+    margin-top: 0px;
+    margin-left: 100px;
+  }
 }
