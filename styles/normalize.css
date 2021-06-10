@@ -433,7 +433,7 @@ a:hover{
 }
 
 @media screen and (max-width: 550px){
-  .home-grid{
+  main{
     display: block;
   }
 }
