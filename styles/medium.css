@@ -1,0 +1,22 @@
+@media screen and (max-width: 550px){
+    main{
+      display: block;
+    }
+
+    h1{
+        padding-left: 2em;
+    }
+
+    h2{
+        font-size: 1.3em;
+    }
+  
+    .photo{
+      margin-top: 0px;
+      margin-left: 100px;
+    }
+
+    footer{
+        font-size: 0.7em;
+    }
+  }
