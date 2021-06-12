@@ -431,9 +431,3 @@ a:visited{
 a:hover{
   color:#bfb7b6;
 }
-
-@media screen and (max-width: 550px){
-  .home-grid{
-    display: block;
-  }
-}
