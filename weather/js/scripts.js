@@ -3,9 +3,12 @@ function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("hide")
 }
 
-let d = new Date();
-let year = d.getFullYear();
-document.getElementById("currentdate").textContent = year
-
-var lastMod = document.lastModified;
-document.getElementById("lastmodified").textContent = lastMod
+var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+var currentDate = new Date();
+var day = currentDate.getDay();        
+var date = currentDate.getDate();
+var month = currentDate.getMonth();
+var year = currentDate.getFullYear();
+                           
+document.getElementById("lastmodified").textContent = `${days[day]}, ${date} ${months[month]} ${year}`; 
