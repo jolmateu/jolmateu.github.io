@@ -1,0 +1,85 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Reem+Kufi&display=swap');*/
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+header{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+header img{
+    height: 70px;
+    padding: 10px;
+}
+
+.logo-box{
+    grid-column: 1/2;
+    grid-row: 1;
+    z-index: 5;
+}
+
+nav button{
+    margin: 1rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #BFB7B6;
+}
+
+nav{
+    grid-column: 1/4;
+    grid-row: 1;
+    background-color: rgb(13, 24, 33);
+    font-family: 'Reem Kufi', sans-serif;
+    text-align: right;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li a{
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #BFB7B6;
+    border-top: 1px solid #BFB7B6;
+}
+
+nav ul li.active a{background-color: rgba(0, 114, 187, 0.2); color: #fff;}
+
+nav ul li a:hover {background-color: rgba(191, 183, 182, 0.4);}
+
+nav ul.hide {display: none;}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+footer{
+    font-family: 'Reem Kufi', sans-serif;
+    color: white;
+    background-color: #0D1821;
+    padding: 20px;
+}
+
+footer img {
+    width: 100%;
+}
+
+.social{
+    display: none;
+}
+
+.copy{
+    text-align: center;
+}
