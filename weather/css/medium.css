@@ -49,6 +49,10 @@
         display:-webkit-flex;
         margin-left: 50px;
     }
+    
+    .social img{
+        margin:10px;
+    }
 
     .copy, #lstupd{
         grid-column: 1 / 3;
