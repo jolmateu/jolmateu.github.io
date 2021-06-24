@@ -58,6 +58,112 @@ nav ul li a:hover {background-color: rgba(191, 183, 182, 0.4);}
 
 nav ul.hide {display: none;}
 
+h1, h2, h3{
+    font-family: 'Reem Kufi', sans-serif;
+    color: #0D1821;
+}
+
+header h1{
+    display:none;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+main{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.main-title{
+    text-align: center;
+}
+
+.banner-box{
+    position: relative;
+    margin: 10px auto;
+}
+
+.weather-summary{
+    position: relative;
+    background: rgba(13, 24, 33, .7);
+    padding: 10px;
+    bottom: 0px;
+    left: 0px;
+    color: #54f2f2 ;
+}
+
+.weather-summary h2{
+    color: white;
+}
+
+.weather-summary span{
+    color: white;
+}
+
+.weekly-weather{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.flex {
+    display: flex;
+    /* flex-direction: row; */
+    /* let us combine row and wrap with flow */
+    flex-flow: row wrap;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.flex-col {
+    flex: 1 1 auto;
+    background-color: #339989;
+}
+.flex-col, .column-col, .grid-col {
+    border-bottom: 1px solid #bfb7b6;
+    border-left: 1px solid #bfb7b6;
+    text-align: center;
+}
+.flex-col:hover, td:hover, .column-col:hover, .grid-col:hover {
+    opacity: 0.75;
+    background-color: black;
+    color: white;
+}
+.flex, .column, .grid {
+    border-right: 1px solid #bfb7b6;
+}
+
+.col-head {
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid #bfb7b6;
+    text-align: center;
+}
+
+.flex img {
+    padding: 0.25rem;
+}
+
+.data {
+    display: block;
+    padding: 0 5px 5px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.col-head,th {
+    font-weight: 700;
+    font-size: 1rem;
+    background-color: #0d1821;
+    color: white;
+}
+
+.article img{
+    display: block;
+    margin: auto;
+}
+
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
     content: "";
@@ -70,6 +176,8 @@ footer{
     color: white;
     background-color: #0D1821;
     padding: 20px;
+    clear: both;
+    margin-top: 40px;
 }
 
 footer img {
@@ -80,6 +188,11 @@ footer img {
     display: none;
 }
 
-.copy, #lstupd{
+.copy{
     text-align: center;
 }
+
+#lstupd{
+    color:#DCF763;
+    text-align: center;
+  }
