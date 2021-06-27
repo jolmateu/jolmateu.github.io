@@ -67,9 +67,18 @@ header h1{
     display:none;
 }
 
-p{
+p, label, span, input{
     font-family: 'Montserrat', sans-serif;
 }
+
+input{
+    width: 40px;
+}
+
+input:disabled {
+    background: #BFB7B6;
+    color: #0d1821;
+  }
 
 main{
     max-width: 960px;
