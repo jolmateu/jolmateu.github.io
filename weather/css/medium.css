@@ -35,6 +35,20 @@
         float: right;
         margin-bottom: 40px;
     }
+    
+        .banner-box{
+        position: relative;
+        margin: 10px auto;
+    }
+    
+    .weather-summary{
+        position: absolute;
+        background: rgba(13, 24, 33, .7);
+        padding: 10px;
+        bottom: 100px;
+        left: 40px;
+        color: #54f2f2 ;
+    }
 
     footer{
         display: grid;
