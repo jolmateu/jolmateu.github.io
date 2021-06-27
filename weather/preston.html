@@ -38,11 +38,14 @@
 		</picture>
                 <section class="weather-summary">
                     <h2>Weather Summary</h2>
-                    <p>Currently: <span id="currently">95 °F Sunny</span></p>
+                    <label for="temp">Currently:</label>
+                    <input type="text" id="temp" name="temp"><span> °F</span>
                     <p>High: <span id="high">96 °F</span></p>
-                    <p>Wind Chill: <span id="chill">°F</span></p>
+                    <p><label for="sum">Wind Chill:</label>
+                        <input type="text" id="sum" name="sum" disabled><span id="chill">°F </span><input type="button" id="calChill" value="Calc"></p>
                     <p>Humidity: <span id="humidity">20%</span></p>
-                    <p>Wind Speed: <span id="speed">12 mph</span></p>
+                    <label for="wspeed">Wind Speed:</label>
+                    <input type="text" id="wspeed" name="wspeed"><span> mph</span>
                 </section>
             </div>
             <h2>5 Day Forecast</h2>
