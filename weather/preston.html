@@ -30,7 +30,12 @@
         <main>
             <h1 class="main-title">Preston Idaho</h1>
             <div class="banner-box">
-                <img src="images/sunny-cityscape.jpg" alt="Sunny City">
+		<picture>
+                    <source media="(max-width: 560px)" srcset="images/wdd230_image_franklin500.jpg">
+                    <source media="(max-width: 899px)" srcset="images/wdd230_image_franklin800.jpg">
+                    <source media="(min-width: 900px)" srcset="images/wdd230_image_franklin1080.jpg">
+                    <img src="images/wdd230_image_franklin1080.jpeg" alt="Sunny City">
+		</picture>
                 <section class="weather-summary">
                     <h2>Weather Summary</h2>
                     <p>Currently: <span id="currently">Sunny</span></p>
