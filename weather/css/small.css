@@ -210,3 +210,20 @@ footer img {
     color:#DCF763;
     text-align: center;
   }
+
+.main-gallery{
+    display: block;
+    text-align: center;
+}
+
+.row1, .row2, .row3, .row4, .row5, .row6, .row7, .row8, .row9{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bfb7b6;
+    box-shadow: 5px 5px 5px #bfb7b6;
+}
+
+.main-gallery span{
+    display: none;
+}
+
