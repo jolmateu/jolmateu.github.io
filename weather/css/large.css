@@ -181,4 +181,8 @@
         border: 1px solid #0d1821;
         box-shadow: 5px 5px 5px #0d1821;
     }
+    
+    form label.sbs{
+        padding: .4rem 0;
+    }
 } 
