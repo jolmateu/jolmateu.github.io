@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+header {
+    text-align: center;
+}
+
+body{
+    margin: auto;
+    padding: 2rem;
+    max-width: 960px;
+    font-family: 'Josefin Sans', sans-serif;;
+}
+
+h1{
+    font-size: 1.5rem;
+}
+
+h2{
+    font-size: 1.2rem;
+}
+
+h3, h4{
+    font-size: 0.8rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #bfb7b6;
+}
+
+
+section{
+    border-style: solid;
+    border-color: #bfb7b6;
+    width: 90%;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #0d1821;
+    color: white;
+}
+
+img{
+    width: 60%;
+}
+
+footer{
+    text-align: center;
+}
+
+@media only screen and (min-width: 550px) {
+
+    .cards {
+        display: flex;
+        flex-flow: row wrap;
+        margin: 1rem;
+    }
+    .cards section {
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+
+    .cards section {
+        width: 24%;
+        
+    }
+}
