@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Reem+Kufi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">   
+    <title>Change the Weather.org - Preston</title>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <div class="logo-box"><img src="images/logo.png" alt="Change the Weather.org logo"></div>
+            <h1>Change the Weather.org</h1>
+            <nav class="clearfix">
+                <button onclick="toggleMenu()">&#9776;</button>
+                <ul id="primaryNav" class="hide">
+                  <li class="active"><a href="index.html">Home</a></li>
+                  <li><a href="preston.html">Preston</a></li>
+                  <li><a href="soda-springs.html">Soda Springs</a></li>
+                  <li><a href="fish-haven.html">Fish Haven</a></li>
+                  <li><a href="storm-center.html">Storm Center</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="banner-box">
+                <img src="images/sunny-cityscape.jpg" alt="Camping and hiking">
+            </div>
+            <div class="cities">
+                <section class="city1">
+                    <picture>
+                        <source media="(max-width: 1027px)" srcset="images/spring-city.jpg">
+                        <source media="(min-width: 1028px)" srcset="images/rocky-mountain-covered-with-snow-and-fog-during-winter-with-blue-sky.jpg">
+                        <img  class="image-fish-haven" src="images/rocky-mountain-covered-with-snow-and-fog-during-winter-with-blue-sky.jpg" alt="Rocky Mountain">
+                    </picture>
+                    <h2>Fish Haven</h2>
+                    <p>Originally named Rush Creek<br>Year Founded: 1864<br>Population: 501<br>Annual Rain Fall: 14.2</p>
+                  </section>
+                  <section class="city2">
+                    <p>Home of Napoleon Dynamite<br>Year Founded: 1866<br>Population: 5204<br>Annual Rain Fall: 16.65</p>
+                    <h2>Preston</h2>
+                    <picture>
+                        <source media="(max-width: 1027px)" srcset="images/fall-walk.jpg">
+                        <source media="(min-width: 1028px)" srcset="images/spring-mountain.jpg">
+                        <img class="image-preston" src="images/spring-mountain.jpg" alt="Preston">
+                    </picture>
+                  </section>
+                  <section class="city3">
+                    <picture>
+                        <source media="(max-width: 1027px)" srcset="images/fun-in-the-rain.jpg">
+                        <source media="(min-width: 1028px)" srcset="images/autumn-forest.jpg">
+                        <img  class="image-soda" src="images/autumn-forest.jpg" alt="Soda Springs">
+                    </picture>
+                    <h2>Soda Springs</h2>
+                    <p>Historical Oregon trail Oasis<br>Year Founded: 1858<br>Population: 2985<br>Annual Rain Fall: 15.75</p>
+                  </section>
+            </div>
+            <div class="mission">
+                <h2>Our Mission</h2>
+                <p>Our mission is to promote the good use of natural resources, train, teach and transmit how environmental pollution is one of the factors that are influencing climate change, hotter summers, colder winters and often unusual weather, additionally we inform the weather for our region, as well as activities that can be developed outdoors to take advantage of each of the weather stations in our city.
+                    We provide tools for teaching environmental principles and sustainable communities focused according to the type of audience, educational workshops for children and young people, statistical talks for university students or activities for older people.</p>
+                <img src="images/beautiful-shot-of-lightning-strike-in-zagreb-croatia.jpg" alt="">
+            </div>
+        </main>
+        <footer>
+            <div class="contact">
+                <h3>Contact Information</h3>
+                <p>&#9993; info@changetheweather.org</p>
+                <p>&#9742; (+57) 310-2589669</p>
+                <p><a href="images/HomeLarge.jpg">Wireframe large</a></p>
+                <p><a href="images/HomeMedium.jpg">Wireframe medium</a></p>
+                <p><a href="images/HomeMobile.jpg">Wireframe small</a></p>
+            </div>
+            <div class="social">
+                <img src="images/facebook.png" alt="Facebook">
+                <img src="images/gorjeo.png" alt="Facebook">
+                <img src="images/instagram.png" alt="Facebook">
+            </div>
+            <img src="images/Google_Maps.jpg" alt="Location Map">
+            <p class="copy">&copy;<span id="currentdate"></span> Change the Weather.org. All rights reserved</p>
+            <p id="lstupd">Last Updated: <span id="lastmodified"></span></p>
+        </footer>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
