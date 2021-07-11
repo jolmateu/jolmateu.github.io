@@ -5,8 +5,8 @@ function wchill(temp1, wspeed2) {
 }
 
 function calChill() {
-    let temp = parseInt(document.querySelector('#current-temp').value);
-    let wspeed = parseInt(document.querySelector('#wind-speed').value);
+    let temp = parseInt(document.querySelector('current-temp').value);
+    let wspeed = parseInt(document.querySelector('wind-speed').value);
     let result = wchill(temp, wspeed);
 
     document.querySelector('#sum').value = result;
