@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Reem+Kufi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">   
+    <title>Change the Weather.org - Preston</title>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <div class="logo-box"><img src="images/logo.png" alt="Change the Weather.org logo"></div>
+            <h1>Change the Weather.org</h1>
+            <nav class="clearfix">
+                <button onclick="toggleMenu()">&#9776;</button>
+                <ul id="primaryNav" class="hide">
+                  <li><a href="index.html">Home</a></li>
+                  <li class="active"><a href="preston.html">Preston</a></li>
+                  <li><a href="soda-springs.html">Soda Springs</a></li>
+                  <li><a href="fish-haven.html">Fish Haven</a></li>
+                  <li><a href="storm-center.html">Storm Center</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1 class="main-title">Preston Idaho</h1>
+            <div class="banner-box">
+                <picture>
+                    <source media="(max-width: 560px)" srcset="images/wdd230_image_franklin500.jpg">
+                    <source media="(max-width: 899px)" srcset="images/wdd230_image_franklin800.jpg">
+                    <source media="(min-width: 900px)" srcset="images/wdd230_image_franklin1080.jpg">
+                    <img src="images/wdd230_image_franklin1080.jpeg" alt="Sunny City">
+                </picture>
+                <section class="weather-summary">
+                    <h2>Weather Summary</h2>
+                    <p>Condition: <span id="condition"></span></p>
+                    <p>Currently: <span id="current-temp"></span>&deg; F</p>
+                    <p>High: <span id="max-temp"></span>&deg; F</p>
+                    <p><label for="sum">Wind Chill:</label>
+                        <input type="text" id="sum" name="sum" disabled><span id="chill">°F </span><input type="button" id="calChill" value="Calc"></p>
+                    <p>Humidity: <span id="humidity"></span> %</p>
+                    <p>Wind Speed: <span id="wind-speed"></span> mph</p>
+                </section>
+            </div>
+            <h2 class="forecast">5 Day Forecast</h2>
+            <div class="flex">
+	            <div class="flex-col">
+		            <span class="col-head">MON</span>
+		            <img src="images/wrain.png" alt="kitten!">
+		            <span class="data">89F</span>
+	            </div>
+	            <div class="flex-col">
+		            <span class="col-head">TUE</span>
+		            <img src="images/wsun.png" alt="kitten!">
+		            <span class="data">87F</span>
+	            </div>
+	            <div class="flex-col">
+		            <span class="col-head">WED</span>
+		            <img src="images/wcloud.png" alt="kitten!">
+		            <span class="data">78F</span>
+	            </div>
+	            <div class="flex-col">
+		            <span class="col-head">THU</span>
+		            <img src="images/wrain.png" alt="kitten!">
+		            <span class="data">76F</span>
+	            </div>
+	            <div class="flex-col">
+		            <span class="col-head">FRI</span>
+		            <img src="images/wcloudmed.png" alt="kitten!">
+		            <span class="data">85F</span>
+	            </div>
+            </div>
+            <div class="article">
+                <h2>What can you do for the environment?</h2>
+                <img src="images/forests-under-cloudy-sky.jpg" alt="Forest Cloudy Sky">    
+                <p>We have the effects of climate change in sight, hotter summers, colder winters, and many areas with uncontrolled floods, this is the problem but how can you help in the solution? You can do something?<br>
+                   The answer is yes, every day you use elements that can increase environmental pollution and this contributes to climate change, elements such as aerosols, fossil fuels, the indiscriminate use of energy, so what can you do in your home, use electrical energy in the proper way, if you can use clean energy such as solar or wind energy it will be a great saving, additionally you can stop using polluting aerosols and of course if using vehicles that are more environmentally friendly, if you can use your bicycle it would be fabulous, you help the environment and keep fit.<br>
+                   As well as these ideas there are many more, can you share one of your ideas to reduce pollution and help the environment? We await your answers?
+                </p>             
+            </div>
+        </main>
+        <footer>
+            <div class="contact">
+                <h3>Contact Information</h3>
+                <p>&#9993; info@changetheweather.org</p>
+                <p>&#9742; (+57) 310-2589669</p>
+            </div>
+            <div class="social">
+                <img src="images/facebook.png" alt="Facebook">
+                <img src="images/gorjeo.png" alt="Facebook">
+                <img src="images/instagram.png" alt="Facebook">
+            </div>
+            <img src="images/Google_Maps.jpg" alt="Location Map">
+            <p class="copy">&copy;<span id="currentdate"></span> Change the Weather.org. All rights reserved</p>
+            <p id="lstupd">Last Updated: <span id="lastmodified"></span></p>
+        </footer>
+    </div>
+    <script src="js/scripts.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/weatherapi.js"></script>
+</body>
+</html>
