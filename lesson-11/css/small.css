@@ -1,0 +1,311 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Reem+Kufi&display=swap');*/
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+header{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+header img{
+    height: 70px;
+    padding: 10px;
+}
+
+.logo-box{
+    grid-column: 1/2;
+    grid-row: 1;
+    z-index: 5;
+}
+
+nav button{
+    margin: 1rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #BFB7B6;
+}
+
+nav{
+    grid-column: 1/4;
+    grid-row: 1;
+    background-color: rgb(13, 24, 33);
+    font-family: 'Reem Kufi', sans-serif;
+    text-align: right;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li a{
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #BFB7B6;
+    border-top: 1px solid #BFB7B6;
+}
+
+nav ul li.active a{background-color: rgba(0, 114, 187, 0.2); color: #fff;}
+
+nav ul li a:hover {background-color: rgba(191, 183, 182, 0.4);}
+
+nav ul.hide {display: none;}
+
+h1, h2, h3{
+    font-family: 'Reem Kufi', sans-serif;
+    color: #0D1821;
+}
+
+header h1{
+    display:none;
+}
+
+p, label, span, input{
+    font-family: 'Montserrat', sans-serif;
+}
+
+input{
+    width: 40px;
+}
+
+input:disabled {
+    background: #BFB7B6;
+    color: #0d1821;
+  }
+
+main{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.main-title{
+    text-align: center;
+}
+
+.banner-box{
+    position: relative;
+    margin: 10px auto;
+}
+
+.weather-summary{
+    position: relative;
+    background: rgba(13, 24, 33, .7);
+    padding: 10px;
+    bottom: 0px;
+    left: 0px;
+    color: #54f2f2 ;
+}
+
+#calChill{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #339989;
+}
+
+.weather-summary h2{
+    color: white;
+}
+
+.weather-summary span{
+    color: white;
+}
+
+.weekly-weather{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.forecast{
+    margin-top: 40px;
+}
+
+.flex {
+    display: flex;
+    /* flex-direction: row; */
+    /* let us combine row and wrap with flow */
+    flex-flow: row wrap;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 50px;
+}
+
+.flex-col {
+    flex: 1 1 auto;
+    background-color: #339989;
+}
+.flex-col, .column-col, .grid-col {
+    border-bottom: 1px solid #bfb7b6;
+    border-left: 1px solid #bfb7b6;
+    text-align: center;
+}
+.flex-col:hover, td:hover, .column-col:hover, .grid-col:hover {
+    opacity: 0.75;
+    background-color: black;
+    color: white;
+}
+.flex, .column, .grid {
+    border-right: 1px solid #bfb7b6;
+}
+
+.col-head {
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid #bfb7b6;
+    text-align: center;
+}
+
+.flex img {
+    padding: 0.25rem;
+}
+
+.data {
+    display: block;
+    padding: 0 5px 5px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.col-head,th {
+    font-weight: 700;
+    font-size: 1rem;
+    background-color: #0d1821;
+    color: white;
+}
+
+.article img{
+    display: block;
+    margin: auto;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+footer{
+    font-family: 'Reem Kufi', sans-serif;
+    color: white;
+    background-color: #0D1821;
+    padding: 20px;
+    clear: both;
+    margin-top: 40px;
+}
+
+footer img {
+    width: 100%;
+}
+
+.social{
+    display: none;
+}
+
+.copy{
+    text-align: center;
+}
+
+#lstupd{
+    color:#DCF763;
+    text-align: center;
+  }
+
+.main-gallery{
+    display: block;
+    text-align: center;
+}
+
+.row1, .row2, .row3, .row4, .row5, .row6, .row7, .row8, .row9{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bfb7b6;
+    box-shadow: 5px 5px 5px #bfb7b6;
+}
+
+.main-gallery span{
+    display: none;
+}
+
+/*----------- FORM --------------*/
+form fieldset{
+    margin: 2rem 0;
+    border: 1px solid #0d1821;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend{
+    color: #0d1821;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top, form div{
+    display: block;
+    padding-top: 1rem;
+    color: #0072bb;
+    font-size: .8rem;
+}
+
+form label.top input, form label.top select{
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #0d1821;
+    width: 100%;
+    max-width: 40rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+form label.sbs, form label.sbs2{
+    display: block;
+    padding: .75rem 0;
+    color: #0d1821;
+}
+
+form label.sbs input{
+    width: 100%;
+    max-width: 20rem;
+    padding: .75rem 0;
+}
+
+form input.submitBtn{
+    border: none;
+    background-color: #0072bb;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form label.top input:required{
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid{
+    border-left: green solid 6px;
+}
+
+form legend{
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+form div{
+    font-family: 'Montserrat', sans-serif;
+}
+
+option{
+    font-family: 'Montserrat', sans-serif;
+}
+
