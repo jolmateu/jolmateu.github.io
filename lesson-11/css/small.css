@@ -309,3 +309,34 @@ option{
     font-family: 'Montserrat', sans-serif;
 }
 
+.cities{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+  .cities h2{
+      color:#54f2f2
+  }
+
+  .city1,
+  .city2,
+  .city3{
+    border: 2px;
+    border-style: solid;
+    border-color: #bfb7b6;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: #0d1821;
+    color: white;
+  }
+
+  .mission{
+      display: block;
+      margin: auto;
+  }
+
+  .mission img{
+      width: 100%;
+  }
+
