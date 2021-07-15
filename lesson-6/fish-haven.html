@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Reem+Kufi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">   
+    <title>Change the Weather.org - Fish Haven</title>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <div class="logo-box"><img src="images/logo.png" alt="Change the Weather.org logo"></div>
+            <h1>Change the Weather.org</h1>
+            <nav class="clearfix">
+                <button onclick="toggleMenu()">&#9776;</button>
+                <ul id="primaryNav" class="hide">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="preston.html">Preston</a></li>
+                  <li><a href="soda-springs.html">Soda Springs</a></li>
+                  <li class="active"><a href="fish-haven.html">Fish Haven</a></li>
+                  <li><a href="stormcenter.html">Storm Center</a></li>
+                  <li><a href="gallery-7.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1 class="main-title">Fish Haven</h1>
+            <div class="banner-box">
+                <picture>
+                    <source media="(max-width: 560px)" srcset="images/green-grassy-fieldx500.jpg.jpg">
+                    <source media="(max-width: 899px)" srcset="images/green-grassy-fieldx800.jpg">
+                    <source media="(min-width: 900px)" srcset="images/green-grassy-field.jpg">
+                    <img src="images/green-grassy-field.jpg" alt="Sunny City">
+                </picture>
+                <section class="weather-summary">
+                    <h2>Weather Summary</h2>
+                    <p>Condition: <span id="condition"></span></p>
+                    <p>Currently: <span id="current-temp"></span>&deg; F</p>
+                    <p>High: <span id="max-temp"></span>&deg; F</p>
+                    <p><label for="sum">Wind Chill:</label>
+                        <input type="text" id="sum" name="sum" disabled><span id="chill">°F </span><input type="button" id="calChill" value="Calc"></p>
+                    <p>Humidity: <span id="humidity"></span> %</p>
+                    <p>Wind Speed: <span id="wind-speed"></span> mph</p>
+                </section>
+            </div>
+            <h2 class="forecasts">5 Day Forecast</h2>
+            <div class="forecast">
+	            <div class="flex-col">
+		            <span id="day1"></span>
+		            <img src="#" alt="" id="img1">
+		            <span id="temp1"></span>
+	            </div>
+	            <div class="flex-col">
+		            <span id="day2"></span>
+		            <img src="#" alt="" id="img2">
+		            <span id="temp2"></span>
+	            </div>
+	            <div class="flex-col">
+		            <span id="day3"></span>
+		            <img src="#" alt="" id="img3">
+		            <span id="temp3"></span>
+	            </div>
+	            <div class="flex-col">
+		            <span id="day4"></span>
+		            <img src="#" alt="" id="img4">
+		            <span id="temp4"></span>
+	            </div>
+	            <div class="flex-col">
+		            <span id="day5"></span>
+		            <img src="#" alt="" id="img5">
+		            <span id="temp5"></span>
+	            </div>
+            </div>
+            <div class="article">
+                <h2>Look at the Stars</h2>
+                <img src="images/sunset.jpg" alt="Forest Cloudy Sky">    
+                <p>Looking at a starry sky can be one of the most relaxing and comforting experiences out there. However, they cannot be enjoyed anywhere or all year round.
+                    If you want to enjoy a starry sky, the most important thing is that you look for a place where there is no light pollution.<br><br>
+                    The Perseids are visible in summer, roughly between July 17 and August 24. Depending on the year, the days may vary, but it is always during those months. The Perseids, popularly known as the Tears of Saint Lawrence, are considered the best meteor shower of the year.
+                    If you are not lucky enough to be able to enjoy a meteor shower, you have the option of looking for a place where you can see the Milky Way. The United States, being located in the northern hemisphere, the best months to see and enjoy it are between May and August. On the other hand, if you are in a country that belongs to the southern hemisphere since April you will be able to enjoy it.   
+                </p>             
+            </div>
+            <section class="events">
+                <h3>Upcoming Events</h3>
+                <p><span id="event1"></span></p>
+                <p><span id="event2"></span></p>
+                <p><span id="event3"></span></p>
+            </section>
+        </main>
+        <footer>
+            <div class="contact">
+                <h3>Contact Information</h3>
+                <p>&#9993; info@changetheweather.org</p>
+                <p>&#9742; (+57) 310-2589669</p>
+            </div>
+            <div class="social">
+                <img src="images/facebook.png" alt="Facebook">
+                <img src="images/gorjeo.png" alt="Facebook">
+                <img src="images/instagram.png" alt="Facebook">
+            </div>
+            <img src="images/Google_Maps.jpg" alt="Location Map">
+            <p class="copy">&copy;<span id="currentdate"></span> Change the Weather.org. All rights reserved</p>
+            <p id="lstupd">Last Updated: <span id="lastmodified"></span></p>
+        </footer>
+    </div>
+    <script src="js/scripts.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/weatherapifh.js"></script>
+</body>
+</html>

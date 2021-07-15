@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Reem+Kufi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">   
+    <title>Change the Weather.org - Storm Center</title>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <div class="logo-box"><img src="images/logo.png" alt="Change the Weather.org logo"></div>
+            <h1>Change the Weather.org</h1>
+            <nav class="clearfix">
+                <button onclick="toggleMenu()">&#9776;</button>
+                <ul id="primaryNav" class="hide">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="preston.html">Preston</a></li>
+                  <li><a href="soda-springs.html">Soda Springs</a></li>
+                  <li><a href="fish-haven.html">Fish Haven</a></li>
+                  <li class="active"><a href="#">Storm Center</a></li>
+                  <li><a href="gallery-7.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1 class="main-title">Storm Center</h1>
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label class="top">Name* <input type="text" name="name" pattern="[A-Za-z]{5}" required></label>
+                    <label class="top">Email* <input type="email" name="email" placeholder="some@gmail.com" required></label>
+                    <label class="top">Phone number <input type="tel" name="phone" required></label>
+                    <label class="top">Zip code <input type="number" name="zip" required></label>
+                </fieldset>
+        
+                <fieldset>
+                    <legend>Storm Information</legend>
+                    <label class="sbs">Storm Date <input type="date" name="stormDate"></label>
+                    <label class="sbs">Storm Type <input list="stormtype" name="stormtype">
+                        <datalist id="stormtype">
+                            <option value="Flash Flood">
+                            <option value="Hail">
+                            <option value="Hurricane">
+                            <option value="Thunderstorm">
+                            <option value="Tornado"></option>
+                        </datalist>
+                    </label>
+                    <label class="sbs">Storm Severity <input type="range" id="range" name="range" min="1" max="10"></label>
+                    <label class="sbs">Course Region
+                        <select name="region">
+                            <option value="">Select Region ...</option>
+                            <option value="software">Preston</option>
+                            <option value="creative">Soda Spring</option>
+                            <option value="info">Fish Haven</option>
+                        </select>
+                    </label>
+                    <div>User in-danger level</div>
+                    <label class="sbs2"><input type="radio" name="danger" value="yes"> Yes</label>
+                    <label class="sbs2"><input type="radio" name="danger" value="maybe"> Maybe</label>
+                    <label class="sbs2"><input type="radio" name="danger" value="no"> No</label>
+                </fieldset>
+        
+                <fieldset>
+                    <legend>Additional information</legend>
+                    <div>Comments</div>
+                    <label class="top"><textarea name="comments" id="comments" cols="40" rows="10"></textarea></label>
+                </fieldset>
+        
+                <input type="submit" value="Send My Report" class="submitBtn">
+            </form>
+        </main>
+        <footer>
+            <div class="contact">
+                <h3>Contact Information</h3>
+                <p>&#9993; info@changetheweather.org</p>
+                <p>&#9742; (+57) 310-2589669</p>
+            </div>
+            <div class="social">
+                <img src="images/facebook.png" alt="Facebook">
+                <img src="images/gorjeo.png" alt="Facebook">
+                <img src="images/instagram.png" alt="Facebook">
+            </div>
+            <img src="images/Google_Maps.jpg" alt="Location Map">
+            <p class="copy">&copy;<span id="currentdate"></span> Change the Weather.org. All rights reserved</p>
+            <p id="lstupd">Last Updated: <span id="lastmodified"></span></p>
+        </footer>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

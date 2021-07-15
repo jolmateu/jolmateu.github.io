@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Reem+Kufi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">   
+    <title>Change the Weather.org - Soda Springs</title>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <div class="logo-box"><img src="images/logo.png" alt="Change the Weather.org logo"></div>
+            <h1>Change the Weather.org</h1>
+            <nav class="clearfix">
+                <button onclick="toggleMenu()">&#9776;</button>
+                <ul id="primaryNav" class="hide">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="preston.html">Preston</a></li>
+                  <li class="active"><a href="soda-springs.html">Soda Springs</a></li>
+                  <li><a href="fish-haven.html">Fish Haven</a></li>
+                  <li><a href="stormcenter.html">Storm Center</a></li>
+                  <li><a href="gallery-7.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1 class="main-title">Soda Springs</h1>
+            <div class="banner-box">
+                <picture>
+                    <source media="(max-width: 560px)" srcset="images/countryside-road-rocky-mountainsx500.jpg">
+                    <source media="(max-width: 899px)" srcset="images/countryside-road-rocky-mountainsx800.jpg">
+                    <source media="(min-width: 900px)" srcset="images/countryside-road-rocky-mountains.jpg">
+                    <img src="images/countryside-road-rocky-mountains.jpg" alt="Sunny City">
+                </picture>
+                <section class="weather-summary">
+                    <h2>Weather Summary</h2>
+                    <p>Condition: <span id="condition"></span></p>
+                    <p>Currently: <span id="current-temp"></span>&deg; F</p>
+                    <p>High: <span id="max-temp"></span>&deg; F</p>
+                    <p><label for="sum">Wind Chill:</label>
+                        <input type="text" id="sum" name="sum" disabled><span id="chill">°F </span><input type="button" id="calChill" value="Calc"></p>
+                    <p>Humidity: <span id="humidity"></span> %</p>
+                    <p>Wind Speed: <span id="wind-speed"></span> mph</p>
+                </section>
+            </div>
+            <h2 class="forecasts">5 Day Forecast</h2>
+            <div class="forecast">
+	            <div class="flex-col">
+		            <span id="day1"></span>
+		            <img src="#" alt="" id="img1">
+		            <span id="temp1"></span>
+	            </div>
+	            <div class="flex-col">
+		            <span id="day2"></span>
+		            <img src="#" alt="" id="img2">
+		            <span id="temp2"></span>
+	            </div>
+	            <div class="flex-col">
+		            <span id="day3"></span>
+		            <img src="#" alt="" id="img3">
+		            <span id="temp3"></span>
+	            </div>
+	            <div class="flex-col">
+		            <span id="day4"></span>
+		            <img src="#" alt="" id="img4">
+		            <span id="temp4"></span>
+	            </div>
+	            <div class="flex-col">
+		            <span id="day5"></span>
+		            <img src="#" alt="" id="img5">
+		            <span id="temp5"></span>
+	            </div>
+            </div>
+            <div class="article">
+                <h2>Sustainable Agriculture</h2>
+                <img src="images/green-field-tree.jpg" alt="Forest Cloudy Sky">    
+                <p>What is sustainable agriculture and why is it so important today? To be sustainable, agriculture must meet the food and textile needs of present and future generations at reasonable prices for consumers and sufficient to maintain the economy of the agricultural sector without endangering the health of the environment, or the amount of natural resources . We can say that sustainable agriculture is a resource-conserving, environmentally healthy and economically viable agricultural production system.<br><br> Sustainable agriculture arises from the need to develop alternative agricultural systems that are more in line with the needs of today's society, which demands more sustainable and less aggressive forms of production for the environment, and that are socially and economically acceptable.
+                </p>             
+            </div>
+            <section class="events">
+                <h3>Upcoming Events</h3>
+                <p><span id="event1"></span></p>
+                <p><span id="event2"></span></p>
+                <p><span id="event3"></span></p>
+            </section>
+        </main>
+        <footer>
+            <div class="contact">
+                <h3>Contact Information</h3>
+                <p>&#9993; info@changetheweather.org</p>
+                <p>&#9742; (+57) 310-2589669</p>
+            </div>
+            <div class="social">
+                <img src="images/facebook.png" alt="Facebook">
+                <img src="images/gorjeo.png" alt="Facebook">
+                <img src="images/instagram.png" alt="Facebook">
+            </div>
+            <img src="images/Google_Maps.jpg" alt="Location Map">
+            <p class="copy">&copy;<span id="currentdate"></span> Change the Weather.org. All rights reserved</p>
+            <p id="lstupd">Last Updated: <span id="lastmodified"></span></p>
+        </footer>
+    </div>
+    <script src="js/scripts.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/weatherapiss.js"></script>
+</body>
+</html>
