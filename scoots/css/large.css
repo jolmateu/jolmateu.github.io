@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Montserrat');
+
+
+header{
+  display: grid;
+  grid-template-columns: 130px auto;
+  align-items: center;
+}
+
+nav ul{
+  list-style: none;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+  margin: 0;
+  text-align: center;
+}
+
+nav ul li.active a{color: #0072bb;}
+
+nav a:hover{
+  color: #ff006e;
+}
+
+h1, h2, h4, h5, h6 {
+  color: white;
+  font-family: "Permanent Marker", "Times New Roman", Helvetica;
+  padding-left:1em;
+  margin-bottom:-15px;
+}
+
+h2{
+  font-size: 2em;
+}
+
+h3, h4, h5 {
+  color: #ffbe0b;
+}
+
+h3{
+  font-family: "Permanent Marker", "Times New Roman", Helvetica;
+  padding-left:1em;
+  -webkit-text-stroke: 1px black;
+  font-size: 2em;
+}
+
+h4 {
+    font-size: 1.3em;
+}
+
+h5{
+  margin-bottom: 0px;
+  font-size: 1.1em;
+}
+
+p {
+  padding:0.5em;
+  margin-top:10px;
+}
+
+.rf-title {
+    margin-bottom: 0px;
+    color: #ffbe0b;
+    padding-bottom: 20px;
+}
+
+#content{
+  max-width: 960px;
+  margin: 0 auto;
+  background: white;
+  padding: 10px 20px 0px 20px;
+}
+
+#content footer {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.home-paragraph-3{
+  text-align: center;
+}
+
+body{
+  background-color: #0072bb;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+nav a{
+  color: #ffbe0b;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
+main{
+  color: #3a86ff;
+}
+
+.banner-box{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 20px
+}
+
+.banner-box img,
+.banner-box picture{
+  grid-column: 1 / -1;
+  grid-row: 1;
+  width: 100%;
+}
+
+.action{
+  grid-column: 1;
+  grid-row: 1;
+  background-color: rgba(240,240,240,0.6);
+  margin: 2em 3em;
+  padding: 1em;
+  text-align: center;
+}
+
+.action button{
+  line-height: 2em;
+  width: 10em;
+  background-color: #ffbe0b;
+  font-size: 1.2em;
+  font-family: "Permanent Marker";
+  border-radius: 15px;
+  box-shadow: 2px 2px;
+}
+
+.home-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
+}
+
+.home-grid ul {
+    margin: 30px;
+}
+
+.honda {
+    grid-column:  1 / 4;
+    color: white;
+    background-color: #fb5607;
+    grid-row: 1;
+}
+
+.img-honda, .img-jeep {
+    grid-column: 4 / 5;
+}
+
+.img-atv {
+    grid-column: 1 / 3;
+}
+
+.atv {
+    grid-column: 3 / 5;
+    color: white;
+    background-color: #8338ec;
+}
+
+.jeep {
+    grid-column: 1 / 4;
+    color: white;
+    background-color: #ff006e;
+    grid-row: 3;
+}
+
+img{
+  max-width: 100%;
+}
+
+.weather{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    padding-bottom: 20px;
+    margin-top: -20px;
+}
+
+.weather ul {
+    list-style: none;
+}
+
+.weather-summary {
+    grid-column: 1 / 2;
+    align-items: center;
+    color: #ffbe0b;
+}
+
+.weather-summary span{
+    color: #0072bb;
+}
+
+.five-forecast {
+    grid-column: 2 / 5;
+}
+
+.forecasts{
+    margin-top: 0px;
+}
+
+.forecast {
+    display: flex;
+    /* flex-direction: row; */
+    /* let us combine row and wrap with flow */
+    flex-flow: row wrap;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0px;
+}
+
+.flex-col {
+    flex: 1 1 auto;
+    background-color: #0072bb;
+}
+
+.flex-col, .column-col, .grid-col {
+    border-bottom: 1px solid #bfb7b6;
+    border-left: 1px solid #bfb7b6;
+    text-align: center;
+}
+
+.flex-col:hover, td:hover, .column-col:hover, .grid-col:hover {
+    opacity: 0.75;
+    background-color: black;
+    color: white;
+}
+
+.forecast, .column, .grid {
+    border-right: 1px solid #bfb7b6;
+}
+
+#day1, #day2, #day3, #day3, #day4, #day5 {
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid #bfb7b6;
+    text-align: center;
+}
+
+.forecast img {
+    padding: 0.25rem;
+}
+
+#temp1, #temp2, #temp3, #temp4, #temp5 {
+    display: block;
+    padding: 0 5px 5px;
+    font-size: 0.8rem;
+    text-align: center;
+    color: white;
+}
+
+#day1, #day2, #day3, #day4, #day5, th {
+    font-weight: 700;
+    font-size: 1rem;
+    background-color: #ffbe0b;
+    color: white;
+}
+
+.social{
+  text-align:right;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #ffbe0b;
+    color: #ff006e;
+    padding: 20px 0px 0px 40px;
+    margin-top: 30px;
+  }
+  
+.contact{
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+  
+footer p {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    text-align: center;
+  }
+  
+footer li{
+    padding-bottom: 10px;
+    list-style: none;
+  }
+  
+.sublist{
+    padding-left: 20px;
+    font-size: 0.8rem;
+  }
+  
+.footer-nav li a{
+    text-decoration: none;
+    color: white;
+    
+  }
+  
+.footer-nav ul li.active a{color: #0072bb;}
+  
+.footer-nav li a:hover{
+    color: #ff006e;
+  }
+
+/*----------- FORM --------------*/
+form fieldset{
+  margin: 2rem 0;
+  border: 1px solid #0d1821;
+  border-radius: 10px;
+  padding: .5rem 2%;
+}
+
+form legend{
+  color: #3A86FF;
+  margin: 0 1rem;
+  padding: 0 .5rem;
+}
+
+form label.top, form div{
+  display: block;
+  padding-top: 1rem;
+  color: #3A86FF;
+  font-size: .8rem;
+}
+
+form label.top input, form label.top select{
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: .75rem;
+  color: #3A86FF;
+  width: 90%;
+  max-width: 40rem;
+  background-color: rgba(0,0,0,0.1);
+}
+
+form input.submitBtn{
+  border: none;
+  background-color: #3A86FF;
+  color: white;
+  border-radius: 1rem;
+  padding: .75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+}
+
+form label.top input:required{
+  border-left: red solid 6px;
+}
+
+form label.top input:required:valid{
+  border-left: green solid 6px;
+}
+
+form legend{
+  font-family: "Permanent Marker", sans-serif;
+}
+
+form div{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main-title {
+  color:#fb5607;
+  text-align: center;
+}
+
+option{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.plans-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  margin-left: 20px;
+}
+
+.plans-paragraph-1{
+  grid-column: 1 / 6;
+  grid-row: 1 / 2;
+  text-align: center;
+}
+
+.plan1 {
+  background-color: #fb5607;
+}
+
+.plan2 {
+  background-color: #8338ec;
+}
+
+.plan3 {
+  background-color: #ff006e;
+}
+
+.plan1,
+.plan2,
+.plan3{
+  border: 2px;
+  border-style: solid;
+  border-color: black;
+  padding: 15px;
+  color: white;
+}
+
+.plan1{
+  grid-column: 1 / 2;
+  grid-row: 2 / 5;
+}
+
+.plan2{
+  grid-column: 2 / 3;
+  grid-row: 2 / 5;
+}
+
+.plan2 ul{
+  margin-top: 10px;
+}
+
+.plan2 img{
+  margin-top: 50px;
+}
+
+.plan3{
+  grid-column: 3 / 4;
+  grid-row: 2 / 5;
+}
+
+.image-plans{
+  border: 1px solid #000;
+  box-shadow: 5px 5px 5px #000;
+}
+
+.contact-main{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 0px;
+  text-align: left;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+.contact-images {
+  padding: 20px;
+  grid-column: 1 / 3;
+}
+
+.contact-form {
+  padding: 20px;
+  grid-column: 3 / 5;
+  background: #ffbe0b;
+  color: white;
+}
+
+.contact-form button{
+  font-family: 'Montserrat', sans-serif;
+  background: #0072BB;
+  color: white;
+  padding: 10px;
+  margin-left: 60px;
+}
+
+iframe{
+  width: 100%;
+  height: 320px;
+}
+
+picture {
+  width: 100%;
+}
+
+@media screen and (max-width: 550px){
+  .home-grid,
+  .weather,
+  .plans-grid,
+  .contact-main,
+  footer {
+    display: block;
+    text-align: center;
+  }
+
+  .action {
+    display: none;
+  }
+
+  .honda,
+  .atv,
+  .jeep {
+    margin-top: -30px;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .footer-nav {
+    display: none;
+  }
+
+  #content footer {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-right: 60px;
+  }
+}
