@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Scoots Rental | Cozumel, Mexico | Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+  <div id="content"> 
+    <header>
+        <div class="logo-box"><img src="images/logo.png" alt="Rafting travel logo"></div>
+        <nav>
+            <ul>
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="rentals.html">Rentals</a></li>
+              <li><a href="reservations.html">Reservations</a></li>
+              <li><a href="tours.html">Tours</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <div class="banner-box">
+        <picture>
+          <source media="(max-width: 560px)" srcset="images/scooter-tripx550.jpg">
+          <img src="images/scooter-trip.jpg" alt="Scooter Trip">
+        </picture>
+        <div class="action">
+          <h3>
+            Plan your next adventure with us!
+          </h3>
+          <button>Rent now</button>
+        </div>
+      </div>
+      <div class="weather">
+        <section class="weather-summary">
+            <h4>Weather Summary</h4>
+            <ul>
+                <li>Condition: <span id="condition"></span></li>
+                <li>Currently: <span id="current-temp"></span>&deg; F</li>
+                <li>Humidity: <span id="humidity"></span> %</li>
+            </ul>
+        </section>
+        <section class="five-forecast">
+          <h5>5 Days Forecast</h5>
+            <div class="forecast">
+	            <div class="flex-col">
+		            <span id="day1"></span>
+		            <img src="#" alt="" id="img1">
+		            <span id="temp1"></span>
+	            </div>
+	            <div class="flex-col">
+		            <span id="day2"></span>
+		            <img src="#" alt="" id="img2">
+		            <span id="temp2"></span>
+	            </div>
+	            <div class="flex-col">
+		            <span id="day3"></span>
+		            <img src="#" alt="" id="img3">
+		            <span id="temp3"></span>
+	            </div>
+	            <div class="flex-col">
+		            <span id="day4"></span>
+		            <img src="#" alt="" id="img4">
+		            <span id="temp4"></span>
+	            </div>
+	            <div class="flex-col">
+		            <span id="day5"></span>
+		            <img src="#" alt="" id="img5">
+		            <span id="temp5"></span>
+	            </div>
+            </div>
+        </section>
+      </div>
+      <div class="home-grid">
+          <div class="img-honda"><img src="images/honda-rental.jpg" alt="Honda Rental"></div>
+          <div class="honda">
+              <h2>Honda Motors Scooters</h2>
+              <ul>
+                  <li>Honda Metropolitan (49cc)—1 person</li>
+                  <li>Honda Dio (110cc)—2 person</li>
+                  <li>Honda PCX150 (149cc)—2 person</li>
+              </ul>
+          </div>
+          <div class="img-atv"><img src="images/atv-rental.jpg" alt="ATV Rental"></div>
+          <div class="atv">
+            <h2>ATV Side-by-Side</h2>
+            <ul>
+                <li>Honda Pioneer 1000</li>
+            </ul>
+          </div>
+          <div class="img-jeep"><img src="images/jeep-rental.jpg" alt="Jeep Rental"></div>
+          <div class="jeep">
+            <h2>Jeep Rentals</h2>
+            <ul>
+                <li>4-door Jeep Wrangler—manual with A/C—5 people max</li>
+                <li>2-door Jeep Wrangler—open air—manual—4 people max</li>
+            </ul>
+        </div>
+        
+      </div>
+    </main>
+    <footer>
+        <div class="contact">
+          <ul>
+            <li>&#9990; +57 3102549876</li>
+            <li>&#9993; St. James Street 1456 Cozumel, Mexico</li>
+            <li>&#64; info@scoots.com</li>
+            <li><a href="https://co.pinterest.com/" target="_blank"><img src="images/pinterest.png" alt="Pinterest icon"></a> <a href="https://twitter.com/?lang=en" target="_blank"><img src="images/gorjeo.png" alt="Twitter icon"></a> <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="Instagram icon"></a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <ul>
+            <li class="active"><a href="home.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+          <a href="index.html"><img src="images/logo-negative.png" alt="Scooter Negative Logo"></a>
+          <p>&copy; 2021 Scoots - Jose Mateus - WDD 230</p>
+      </footer>
+  </div>
+  <script src="js/weatherapi.js"></script>
+</body>
+</html>

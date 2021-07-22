@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Scoots Rental | Cozumel, Mexico | Rental</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+  <div id="content"> 
+    <header>
+        <div class="logo-box"><img src="images/logo.png" alt="Rafting travel logo"></div>
+        <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="rentals.html">Rentals</a></li>
+              <li class="active"><a href="reservations.html">Reservations</a></li>
+              <li><a href="tours.html">Tours</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <div class="banner-box">
+        <img src="images/reservation.jpg" alt="Rental Scooters">
+      </div>
+      <h1 class="rf-title">Reservation Form</h1>
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Terms and conditions</legend>
+                    <ul>
+                        <li>A $50 security deposit is required to confirm reservations.</li>
+                        <li>A valid drivers license is required in hand at time of rental.</li>
+                        <li>No one under 12 years of age is allowed to ride on the scooters.</li>
+                        <li>Fuel charge not included.</li>
+                        <li>Unlimited mileage.</li>
+                        <li>Liability insurance is free of charge.</li>
+                        <li>Reservations rate requires 24 hour prior notification.</li>
+                        <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+                        <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+                        <li>Rentals may be returned to either location.</li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Rental Information</legend>
+                    <label class="top">Date <input type="date" name="stormDate"></label>
+                    <label class="top">Rental No. <input type="number" name="rentalno" required></label>
+                    <label class="top">Rental Type
+                        <select name="type">
+                            <option value="">Select Rental Type ...</option>
+                            <option value="metro">Honda Metro Scooter</option>
+                            <option value="dio">Honda Dio Scooter</option>
+                            <option value="pcx">Honda PCX150 Scooter</option>
+                            <option value="pcx">Honda Pioneer ATV</option>
+                            <option value="pcx">Jeep Wrangler - 4 door</option>
+                            <option value="pcx">Jeep Wrangler - 2 door</option>
+                        </select>
+                    </label>
+                    <label class="top">Name* <input type="text" name="name" required></label>
+                    <label class="top">Email* <input type="email" name="email" placeholder="some@gmail.com" required></label>
+                    <label class="top">Phone number <input type="tel" name="phone" required></label>
+                    <label class="top">Home State <input type="text" name="state" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional information</legend>
+                    <div>Special Accommodations/Comments</div>
+                    <label class="top"><textarea name="comments" id="comments" cols="40" rows="10"></textarea></label>
+                </fieldset>
+                <input type="submit" value="Send Rental form" class="submitBtn">
+            </form>      
+    </main>
+    <footer>
+        <div class="contact">
+          <ul>
+            <li>&#9990; +57 3102549876</li>
+            <li>&#9993; St. James Street 1456 Cozumel, Mexico</li>
+            <li>&#64; info@scoots.com</li>
+            <li><a href="https://co.pinterest.com/" target="_blank"><img src="images/pinterest.png" alt="Pinterest icon"></a> <a href="https://twitter.com/?lang=en" target="_blank"><img src="images/gorjeo.png" alt="Twitter icon"></a> <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="Instagram icon"></a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li class="active"><a href="reservations.html">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+          <a href="index.html"><img src="images/logo-negative.png" alt="Scooter Negative Logo"></a>
+          <p>&copy; 2021 Scoots - Jose Mateus - WDD 230</p>
+      </footer>
+  </div>
+  <script src="js/weatherapi.js"></script>
+</body>
+</html>
